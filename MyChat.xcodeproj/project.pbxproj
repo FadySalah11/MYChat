@@ -19,6 +19,9 @@
 		0C97E40A29B41AF600335194 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97E40929B41AF600335194 /* ChatViewController.swift */; };
 		0C97E40F29B426B500335194 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C97E40E29B426B500335194 /* GoogleService-Info.plist */; };
 		0CD4E55A29B4E2A900654CA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E55929B4E2A900654CA9 /* Constants.swift */; };
+		0CE85EE629B80B7500374DFA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE85EE529B80B7500374DFA /* Message.swift */; };
+		0CE85EE929B8100D00374DFA /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE85EE729B8100D00374DFA /* MessageCell.swift */; };
+		0CE85EEA29B8100D00374DFA /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE85EE829B8100D00374DFA /* MessageCell.xib */; };
 		F720EA42E31EEB8A7028E3C8 /* Pods_MyChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCF073128D5AE3FBA7BD01F /* Pods_MyChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		0C97E40929B41AF600335194 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0C97E40E29B426B500335194 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CD4E55929B4E2A900654CA9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0CE85EE529B80B7500374DFA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0CE85EE729B8100D00374DFA /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		0CE85EE829B8100D00374DFA /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		5DC41E01728C9A2CE86FA150 /* Pods-MyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyChat.release.xcconfig"; path = "Target Support Files/Pods-MyChat/Pods-MyChat.release.xcconfig"; sourceTree = "<group>"; };
 		6BCF073128D5AE3FBA7BD01F /* Pods_MyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +110,7 @@
 		0C97E40C29B4245200335194 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0CE85EE529B80B7500374DFA /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				0C97E3F429B4197400335194 /* Main.storyboard */,
+				0CE85EE729B8100D00374DFA /* MessageCell.swift */,
+				0CE85EE829B8100D00374DFA /* MessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE85EEA29B8100D00374DFA /* MessageCell.xib in Resources */,
 				0C97E3FE29B4197600335194 /* LaunchScreen.storyboard in Resources */,
 				0C97E40F29B426B500335194 /* GoogleService-Info.plist in Resources */,
 				0C97E3FB29B4197600335194 /* Assets.xcassets in Resources */,
@@ -250,8 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C97E40829B41ADC00335194 /* LoginViewController.swift in Sources */,
+				0CE85EE929B8100D00374DFA /* MessageCell.swift in Sources */,
 				0C97E3F329B4197400335194 /* WelcomeViewController.swift in Sources */,
 				0C97E40629B41ABF00335194 /* RegisterViewController.swift in Sources */,
+				0CE85EE629B80B7500374DFA /* Message.swift in Sources */,
 				0C97E40A29B41AF600335194 /* ChatViewController.swift in Sources */,
 				0C97E3F929B4197400335194 /* MyChat.xcdatamodeld in Sources */,
 				0C97E3EF29B4197400335194 /* AppDelegate.swift in Sources */,

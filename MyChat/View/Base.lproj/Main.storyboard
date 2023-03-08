@@ -191,7 +191,7 @@
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="fady@11.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="60x-ep-LGN">
                                         <rect key="frame" x="49" y="51" width="331" height="45"/>
-                                        <color key="textColor" name="BrandBlue"/>
+                                        <color key="textColor" red="0.14880979059999999" green="0.5529533029" blue="0.62351995709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -216,7 +216,7 @@
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hr-He-oBW">
                                         <rect key="frame" x="49" y="48" width="331" height="45"/>
-                                        <color key="textColor" name="BrandBlue"/>
+                                        <color key="textColor" red="0.14880979059999999" green="0.5529533029" blue="0.62351995709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
@@ -250,7 +250,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="buJ-d2-4G1"/>
-                        <color key="backgroundColor" red="0.1647058824" green="0.78039215689999997" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.18796589969999999" green="0.69021111729999995" blue="0.78038036820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VRD-Sq-A9s" firstAttribute="top" secondItem="L1X-5S-vPw" secondAttribute="bottom" constant="-100" id="N85-uR-YyM"/>
                             <constraint firstItem="VRD-Sq-A9s" firstAttribute="leading" secondItem="buJ-d2-4G1" secondAttribute="leading" id="Tx7-Nc-L9b"/>
@@ -281,16 +281,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="btH-Ak-gUC">
                                 <rect key="frame" x="0.0" y="88" width="428" height="744"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="uYp-uV-DhZ">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uYp-uV-DhZ" id="K12-3a-uSE">
-                                            <rect key="frame" x="0.0" y="0.0" width="428" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NP6-vA-jgY">
                                 <rect key="frame" x="0.0" y="832" width="428" height="60"/>
@@ -344,7 +334,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="J2Q-X8-9gx">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="kiu-DH-NQZ">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" name="BrandLightPurple"/>
                             <connections>
                                 <action selector="logOutPressed:" destination="xm5-ZY-KJO" id="PXM-nL-YwV"/>
                             </connections>
@@ -367,6 +357,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="55i-Qb-BRx">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="BrandLightPurple"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -379,7 +372,9 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="n9h-Ze-fIn"/>
+        <designable name="n9h-Ze-fIn">
+            <size key="intrinsicContentSize" width="271.33333333333331" height="60"/>
+        </designable>
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="FvI-bJ-Bx9"/>

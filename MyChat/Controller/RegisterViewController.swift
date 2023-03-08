@@ -2,7 +2,7 @@
 //  RegisterViewController.swift
 //  MyChat
 //
-//  Created by Folio on 05/03/2023.
+//  Created by Fady Salah on 05/03/2023.
 //
 
 import UIKit
