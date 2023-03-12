@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C5E2C9029BD53A500D766A0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5E2C8F29BD53A500D766A0 /* IQKeyboardManagerSwift */; };
 		0C97E3EF29B4197400335194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97E3EE29B4197400335194 /* AppDelegate.swift */; };
 		0C97E3F129B4197400335194 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97E3F029B4197400335194 /* SceneDelegate.swift */; };
 		0C97E3F329B4197400335194 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97E3F229B4197400335194 /* WelcomeViewController.swift */; };
@@ -54,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F720EA42E31EEB8A7028E3C8 /* Pods_MyChat.framework in Frameworks */,
+				0C5E2C9029BD53A500D766A0 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,14 +83,11 @@
 		0C97E3ED29B4197400335194 /* MyChat */ = {
 			isa = PBXGroup;
 			children = (
-				0C97E3EE29B4197400335194 /* AppDelegate.swift */,
-				0C97E3F029B4197400335194 /* SceneDelegate.swift */,
-				0CD4E55929B4E2A900654CA9 /* Constants.swift */,
+				0CE8210529BA016400FA5BD0 /* Delegates */,
 				0C97E40C29B4245200335194 /* Model */,
 				0C97E40D29B4245C00335194 /* View */,
 				0C97E40B29B41AFE00335194 /* Controller */,
-				0C97E3FA29B4197600335194 /* Assets.xcassets */,
-				0C97E3FC29B4197600335194 /* LaunchScreen.storyboard */,
+				0CE8210429BA012900FA5BD0 /* Constants */,
 				0C97E3FF29B4197600335194 /* Info.plist */,
 				0C97E40E29B426B500335194 /* GoogleService-Info.plist */,
 				0C97E3F729B4197400335194 /* MyChat.xcdatamodeld */,
@@ -118,11 +117,30 @@
 		0C97E40D29B4245C00335194 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0C97E3FA29B4197600335194 /* Assets.xcassets */,
+				0C97E3FC29B4197600335194 /* LaunchScreen.storyboard */,
 				0C97E3F429B4197400335194 /* Main.storyboard */,
 				0CE85EE729B8100D00374DFA /* MessageCell.swift */,
 				0CE85EE829B8100D00374DFA /* MessageCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0CE8210429BA012900FA5BD0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0CD4E55929B4E2A900654CA9 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0CE8210529BA016400FA5BD0 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				0C97E3EE29B4197400335194 /* AppDelegate.swift */,
+				0C97E3F029B4197400335194 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		49A72B0CF2CC25291A7C2ADA /* Frameworks */ = {
@@ -160,6 +178,9 @@
 			dependencies = (
 			);
 			name = MyChat;
+			packageProductDependencies = (
+				0C5E2C8F29BD53A500D766A0 /* IQKeyboardManagerSwift */,
+			);
 			productName = MyChat;
 			productReference = 0C97E3EB29B4197400335194 /* MyChat.app */;
 			productType = "com.apple.product-type.application";
@@ -188,6 +209,9 @@
 				Base,
 			);
 			mainGroup = 0C97E3E229B4197400335194;
+			packageReferences = (
+				0C5E2C8E29BD53A500D766A0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 0C97E3EC29B4197400335194 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -487,6 +511,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C5E2C8E29BD53A500D766A0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C5E2C8F29BD53A500D766A0 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C5E2C8E29BD53A500D766A0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0C97E3F729B4197400335194 /* MyChat.xcdatamodeld */ = {
