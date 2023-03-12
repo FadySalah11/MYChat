@@ -84,10 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				0CE8210529BA016400FA5BD0 /* Delegates */,
+				0CE8210429BA012900FA5BD0 /* Constants */,
 				0C97E40C29B4245200335194 /* Model */,
 				0C97E40D29B4245C00335194 /* View */,
 				0C97E40B29B41AFE00335194 /* Controller */,
-				0CE8210429BA012900FA5BD0 /* Constants */,
 				0C97E3FF29B4197600335194 /* Info.plist */,
 				0C97E40E29B426B500335194 /* GoogleService-Info.plist */,
 				0C97E3F729B4197400335194 /* MyChat.xcdatamodeld */,

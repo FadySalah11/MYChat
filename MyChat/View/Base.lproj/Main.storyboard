@@ -19,7 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJz-tY-t50">
                                 <rect key="frame" x="0.0" y="831" width="428" height="61"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="backgroundColor" name="BrandBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="U86-79-dJI"/>
                                 </constraints>
@@ -191,7 +191,7 @@
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="fady@11.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="60x-ep-LGN">
                                         <rect key="frame" x="49" y="51" width="331" height="45"/>
-                                        <color key="textColor" red="0.14880979059999999" green="0.5529533029" blue="0.62351995709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -216,7 +216,7 @@
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hr-He-oBW">
                                         <rect key="frame" x="49" y="48" width="331" height="45"/>
-                                        <color key="textColor" red="0.14880979059999999" green="0.5529533029" blue="0.62351995709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
@@ -250,7 +250,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="buJ-d2-4G1"/>
-                        <color key="backgroundColor" red="0.18796589969999999" green="0.69021111729999995" blue="0.78038036820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="BrandBlue"/>
                         <constraints>
                             <constraint firstItem="VRD-Sq-A9s" firstAttribute="top" secondItem="L1X-5S-vPw" secondAttribute="bottom" constant="-100" id="N85-uR-YyM"/>
                             <constraint firstItem="VRD-Sq-A9s" firstAttribute="leading" secondItem="buJ-d2-4G1" secondAttribute="leading" id="Tx7-Nc-L9b"/>
@@ -270,7 +270,7 @@
             </objects>
             <point key="canvasLocation" x="1857.9710144927537" y="643.52678571428567"/>
         </scene>
-        <!--Chat View Controller-->
+        <!-- MYChat-->
         <scene sceneID="cG6-Hu-Dp5">
             <objects>
                 <viewController id="xm5-ZY-KJO" customClass="ChatViewController" customModule="MyChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -332,7 +332,7 @@
                             <constraint firstItem="NP6-vA-jgY" firstAttribute="leading" secondItem="iq7-cn-Oxl" secondAttribute="leading" id="s0d-8X-P4t"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="J2Q-X8-9gx">
+                    <navigationItem key="navigationItem" title=" MYChat" id="J2Q-X8-9gx">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="kiu-DH-NQZ">
                             <color key="tintColor" name="BrandLightPurple"/>
                             <connections>
@@ -357,8 +357,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="55i-Qb-BRx">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="BrandBlue"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" name="BrandLightPurple"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -396,9 +399,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
